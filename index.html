@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Assets</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div>
+            <h1>MY ASSETS</h1>
+        </div>
+    
+        
+    </header>
+    <main>
+        <div class="total-container">
+            <h6>Total Balance</h6>
+            <h1 class="total-money"><span id="totalBalance">₹0</span></h1>
+            <div class="fox">
+                <button class="btn">
+                    <p>SHOW BREAKDOWN</p>
+                </button>
+                
+            </div>
+
+        </div>
+
+        <div class="asset-container">
+            <h2>Assets</h2>
+            <div class="asset-card">
+                <div class="locker">
+                    <img src="sbi-logo.png" alt="logo">
+                    <h3>State Bank Of India</h3>
+                </div>
+                <div class="money">
+                    <h3>₹<input type="number" class="account-input" data-type="banks" placeholder="amount"></h3>
+                </div>
+            </div>
+            <div class="asset-card">
+                <div class="locker">
+                    <img src="ab-logo.png" alt="">
+                    <h3>Axis Bank</h3>
+                </div>
+                <div class="money">
+                    <h3>₹<input type="number" class="account-input" data-type="banks" placeholder="amount"></h3>
+                </div>
+            </div>
+            <div class="asset-card">
+                <div class="locker">
+                    <img src="bank.png" alt="">
+                    <h3>Other Banks</h3>
+                </div>
+                <div class="money">
+                    <h3>₹<input type="number" class="account-input" data-type="banks" placeholder="amount"></h3>
+                </div>
+            </div>
+            <div class="asset-card">
+                <div class="locker">
+                    <img src="earnings.png" alt="">
+                    <h3>Mutual Funds</h3>
+                </div>
+                <div class="money">
+                    <h3>₹<input type="number" class="account-input" data-type="investment" placeholder="amount"></h3>
+                </div>
+            </div>
+            <div class="asset-card">
+                <div class="locker"> 
+                    <img src="coin.png" alt="">
+                    <h3>Digital Gold</h3>
+                </div>
+                <div class="money">
+                    <h3>₹<input type="number" class="account-input" data-type="investment" placeholder="amount"></h3>
+                </div>
+            </div>
+            <div class="asset-card">
+                <div class="locker">
+                    <img src="fd.png" alt="">
+                    <h3>Fixed Deposit</h3>
+                </div>
+                <div class="money">
+                    <h3>₹<input type="number" class="account-input" data-type="investment" placeholder="amount"></h3>
+                </div>
+            </div>
+            <div class="asset-card">
+                <div class="locker">
+                    <img src="dollars.png" alt="">
+                    <h3>Cash In Hand</h3>
+                </div>
+                <div class="money">
+                    <h3>₹<input type="number" class="account-input" data-type="cash+lend" placeholder="amount"></h3>
+                </div>
+            </div>
+            <div class="asset-card">
+                <div class="locker">
+                    <img src="borrow.png" alt="">
+                    <h3>Lend To People</h3>
+                </div>
+                <div class="money">
+                    <h3>₹<input type="number" class="account-input" data-type="cash+lend" placeholder="amount"></h3>
+                </div>
+            </div>
+            <div class="asset-card">
+                <div class="locker">
+                    <img src="bitcoin.png" alt="">
+                    <h3>Crypto Currency</h3>
+                </div>
+                <div class="money">
+                    <h3>₹<input type="number" class="account-input" data-type="investment" placeholder="amount"></h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="chart">
+            <canvas id="donutChart"></canvas>
+    
+        </div>
+
+        <div style="height: 10px;"></div>
+        
+        <div class="breakdown" >
+            <h2>Breakdown</h2>
+            <div class="asset-card">
+                <div class="locker">
+                    <img src="bank.png" alt="">
+                    <h3>In Bank Accounts</h3>
+                </div>
+                <div class="money">
+                    <h3 class="amount">₹</h3>
+                    <h3 class="percentage"></h3>
+                </div>
+                
+            </div>
+
+            <div class="asset-card">
+                <div class="locker">
+                    <img src="earnings.png" alt="">
+                    <h3>Investments</h3>
+                </div>
+                <div class="money">
+                    <h3 class="amount">₹</h3>
+                    <h3 class="percentage"></h3>
+                </div>
+                
+            </div>
+
+            <div class="asset-card">
+                <div class="locker">
+                    <img src="dollars.png" alt="">
+                    <h3>Cash+Lend</h3>
+                </div>
+                <div class="money">
+                    <h3 class="amount">₹</h3>
+                    <h3 class="percentage"></h3>
+                </div>
+                
+            </div>
+
+           
+            
+        </div>
+        
+        <div class="chart">
+            <canvas id="breakdownChart"></canvas>
+        </div>
+          
+          
+
+        
+
+    </main>
+    
+    <script src="percentage-breakdown.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    
+
+    
+</body>
+</html>                                                                                                                                                         
